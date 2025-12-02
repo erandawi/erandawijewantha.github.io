@@ -1,0 +1,29 @@
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.bak
+*.log
+
+# Don't ignore these (common mistakes)
+!assets/
+!assets/css/
+!assets/images/
+!assets/icons/
+!assets/files/
+
+# Optional: Ignore drafts folder if you create one
+drafts/
+_drafts/
+
+.claude

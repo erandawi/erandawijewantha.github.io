@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio of data engineering, BI, and AI/ML projects by Eranda Wijewantha">
+    <meta name="keywords" content="Data Projects, Machine Learning, Business Intelligence, ETL, Automation">
+    <meta name="author" content="Eranda Wijewantha">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <title>Eranda Wijewantha | Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <script defer src="assets/js/projects-filter.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">EW</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="insights-media.html" class="nav-link">Blog & Media</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="firefly-container">
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>Solutions that transform data into value</p>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Machine Learning & AI</button>
+                <button class="filter-btn">Business Intelligence & Data Analysis</button>
+                <button class="filter-btn">Data Engineering</button>
+            </div>
+
+            <div class="project-detail" id="fraud-detection" data-category="Machine Learning & AI">
+                <h3>Fraud Detection ML System</h3>
+                <h4>Problem</h4>
+                <p>A financial services company was experiencing significant losses due to fraudulent transactions. Their rule-based detection system had high false positive rates, leading to customer dissatisfaction and operational overhead.</p>
+
+                <h4>Solution</h4>
+                <p>Developed an end-to-end machine learning pipeline that analyzes transaction patterns in real-time. The system uses ensemble methods combining Random Forest, XGBoost, and neural networks to identify suspicious activities with higher accuracy.</p>
+                <p>Key features include:</p>
+                <ul>
+                    <li>Real-time feature engineering pipeline processing 50,000+ transactions per hour</li>
+                    <li>Anomaly detection using isolation forests for novel fraud patterns</li>
+                    <li>Explainable AI dashboard showing risk factors for each flagged transaction</li>
+                    <li>Automated model retraining pipeline with data drift monitoring</li>
+                </ul>
+
+                <h4>Stack Used</h4>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Apache Airflow</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">FastAPI</span>
+                </div>
+
+                <h4>Outcome / Impact</h4>
+                <p>Reduced false positive rate by 67% while increasing fraud detection accuracy to 94%. The system now processes transactions with 99.9% uptime and has prevented an estimated $2.3M in fraudulent transactions in the first six months.</p>
+
+                <div class="project-actions">
+                    <a href="https://github.com/YOUR_USERNAME/fraud-detection" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a href="#" class="btn btn-outline">Case Study</a>
+                </div>
+            </div>
+
+            <div class="project-detail" id="demand-forecasting" data-category="Machine Learning & AI">
+                <h3>Retail Demand Forecasting System</h3>
+                <h4>Problem</h4>
+                <p>A retail chain struggled with inventory management—frequent stockouts of popular items and excess inventory of slow-moving products. This resulted in lost sales and increased carrying costs.</p>
+
+                <h4>Solution</h4>
+                <p>Built a comprehensive demand forecasting system that predicts sales at SKU-store level for 14-day horizons. The solution integrates historical sales data, promotional calendars, weather data, and local events to generate accurate forecasts.</p>
+                <p>System capabilities:</p>
+                <ul>
+                    <li>Time series forecasting using Facebook Prophet with custom seasonality components</li>
+                    <li>Interactive Streamlit dashboard for store managers to view and adjust forecasts</li>
+                    <li>Automated inventory recommendations based on forecast and safety stock levels</li>
+                    <li>A/B testing framework to measure forecast accuracy improvements</li>
+                </ul>
+
+                <h4>Stack Used</h4>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Prophet</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Plotly</span>
+                </div>
+
+                <h4>Outcome / Impact</h4>
+                <p>Achieved MAPE (Mean Absolute Percentage Error) of 12% across all SKUs. Reduced stockouts by 43% and decreased excess inventory by 31%, leading to an estimated $890K annual cost savings.</p>
+
+                <div class="project-actions">
+                    <a href="https://github.com/YOUR_USERNAME/retail-forecasting" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a href="#" class="btn btn-outline">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-detail" id="bi-dashboard" data-category="Business Intelligence & Data Analysis">
+                <h3>Executive BI Dashboard for Banking Operations</h3>
+                <h4>Problem</h4>
+                <p>Bank executives relied on weekly static reports delivered via email, making it difficult to identify trends, drill into anomalies, or make timely decisions. Data was scattered across multiple systems with no single source of truth.</p>
+
+                <h4>Solution</h4>
+                <p>Designed and developed a comprehensive Power BI dashboard suite providing real-time visibility into key banking metrics including loan performance, deposit trends, customer acquisition, and operational efficiency.</p>
+                <p>Dashboard features:</p>
+                <ul>
+                    <li>Unified data model integrating 7 source systems via automated ETL pipeline</li>
+                    <li>Row-level security ensuring users see only relevant branch/region data</li>
+                    <li>Drill-through capabilities from executive summaries to transaction-level details</li>
+                    <li>Custom DAX measures for complex financial calculations and KPIs</li>
+                    <li>Mobile-optimized layouts for on-the-go access</li>
+                </ul>
+
+                <h4>Stack Used</h4>
+                <div class="project-tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">SSIS</span>
+                </div>
+
+                <h4>Outcome / Impact</h4>
+                <p>Reduced executive reporting time from 2 days to real-time. Dashboard adoption reached 94% among target users within 3 months. Enabled data-driven decision making that improved loan approval turnaround time by 28%.</p>
+
+                <div class="project-actions">
+                    <a href="#" class="btn btn-outline">View Screenshots</a>
+                </div>
+            </div>
+
+            <div class="project-detail" id="etl-pipeline" data-category="Data Engineering">
+                <h3>Automated Data Pipeline for Financial Reporting</h3>
+                <h4>Problem</h4>
+                <p>Monthly regulatory reporting required 5 days of manual data extraction, transformation, and validation from multiple sources. The process was error-prone and delayed critical compliance deadlines.</p>
+
+                <h4>Solution</h4>
+                <p>Built an end-to-end automated ETL pipeline using Apache Airflow that orchestrates data extraction from 12 source systems, applies business rules and transformations, and generates regulatory-compliant reports.</p>
+                <p>Pipeline architecture:</p>
+                <ul>
+                    <li>Modular DAGs for each reporting requirement with dependency management</li>
+                    <li>Data quality checks at each transformation stage with automated alerts</li>
+                    <li>Incremental loading strategies to optimize processing time</li>
+                    <li>Audit trail logging for complete lineage and reproducibility</li>
+                    <li>Containerized deployment using Docker for environment consistency</li>
+                </ul>
+
+                <h4>Stack Used</h4>
+                <div class="project-tags">
+                    <span class="tag">Apache Airflow</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">SQL</span>
+                </div>
+
+                <h4>Outcome / Impact</h4>
+                <p>Reduced reporting cycle from 5 days to 6 hours (95% time savings). Eliminated manual errors and improved data accuracy to 99.8%. System now processes 2.5M records monthly with full audit compliance.</p>
+
+                <div class="project-actions">
+                    <a href="https://github.com/YOUR_USERNAME/etl-pipeline" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-detail" id="customer-segmentation" data-category="Machine Learning & AI">
+                <h3>Customer Segmentation & RFM Analysis Tool</h3>
+                <h4>Problem</h4>
+                <p>Marketing team lacked insights into customer behavior patterns and struggled to personalize campaigns effectively. One-size-fits-all approach resulted in low engagement and conversion rates.</p>
+
+                <h4>Solution</h4>
+                <p>Developed an automated customer segmentation system using RFM (Recency, Frequency, Monetary) analysis combined with K-means clustering to identify distinct customer groups and their characteristics.</p>
+                <p>Tool capabilities:</p>
+                <ul>
+                    <li>Automated RFM score calculation with configurable thresholds</li>
+                    <li>Machine learning clustering to identify 8 distinct customer segments</li>
+                    <li>Interactive visualization dashboard showing segment characteristics</li>
+                    <li>Recommendation engine suggesting optimal campaign strategies per segment</li>
+                    <li>Monthly automated updates with segment migration tracking</li>
+                </ul>
+
+                <h4>Stack Used</h4>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Plotly</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">SQL</span>
+                </div>
+
+                <h4>Outcome / Impact</h4>
+                <p>Enabled targeted marketing campaigns that increased email open rates by 54% and conversion rates by 37%. Identified high-value customer segment representing 23% of customers but 71% of revenue.</p>
+
+                <div class="project-actions">
+                    <a href="https://github.com/YOUR_USERNAME/customer-segmentation" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a href="#" class="btn btn-outline">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-detail" id="web-scraping" data-category="Data Engineering">
+                <h3>Automated Web Scraping & Data Collection System</h3>
+                <h4>Problem</h4>
+                <p>Research team needed to monitor competitor pricing and product availability across 15 e-commerce sites daily. Manual collection was time-consuming and inconsistent.</p>
+
+                <h4>Solution</h4>
+                <p>Built a robust web scraping system with automated scheduling, error handling, and data storage. The system adapts to website changes and provides clean, structured data for analysis.</p>
+                <p>System features:</p>
+                <ul>
+                    <li>Distributed scraping architecture handling 50,000+ pages daily</li>
+                    <li>Intelligent retry logic and proxy rotation for reliability</li>
+                    <li>Anti-blocking techniques respecting robots.txt and rate limits</li>
+                    <li>Data validation and deduplication pipeline</li>
+                    <li>RESTful API for data access and integration</li>
+                </ul>
+
+                <h4>Stack Used</h4>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Scrapy</span>
+                    <span class="tag">BeautifulSoup</span>
+                    <span class="tag">Selenium</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Redis</span>
+                </div>
+
+                <h4>Outcome / Impact</h4>
+                <p>Automated collection of 200,000+ data points monthly with 98% accuracy. Provided pricing intelligence that enabled dynamic pricing strategy, improving margins by 8.5%.</p>
+
+                <div class="project-actions">
+                    <a href="https://github.com/YOUR_USERNAME/web-scraper" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eranda Wijewantha</h3>
+                    <p>Data Engineer | BI Specialist | AI Solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="mailto:your.email@example.com">Email</a>
+                        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://medium.com/@YOUR_MEDIUM" target="_blank" rel="noopener noreferrer">Medium</a>
+                        <!-- <a href="https://YOUR_SUBSTACK.substack.com" target="_blank" rel="noopener noreferrer">Substack</a> -->
+                        <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eranda Wijewantha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
