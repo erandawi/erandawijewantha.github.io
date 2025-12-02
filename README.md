@@ -2,7 +2,7 @@
 
 A minimalistic, modern, and professional portfolio website for a Data Engineer / BI Specialist / AI Solutions Builder.
 
-**Live Site:** https://erandawijewantha.github.io/portfolio-website/
+**Live Site:** https://erandawijewantha.github.io/
 
 ## Features
 
