@@ -1,24 +1,28 @@
-# Sameera Ranawaka - Portfolio Website
+# Eranda Wijewantha - Portfolio Website
 
 A minimalistic, modern, and professional portfolio website for a Data Engineer / BI Specialist / AI Solutions Builder.
 
+**Live Site:** https://erandawijewantha.github.io/portfolio-website/
+
 ## Features
 
-- **Pure HTML + CSS**: No JavaScript dependencies, fast loading, easy to maintain
-- **Dark Theme**: Professional dark color scheme with firefly glow accents
+- **Pure HTML + CSS + JavaScript**: Minimal JavaScript for enhanced interactivity
+- **Dark Theme**: Professional dark color scheme with emerald green accents (#10B981)
 - **Fully Responsive**: Optimized for mobile, tablet, and desktop
 - **SEO Optimized**: Proper meta tags, semantic HTML, and structured content
 - **Accessible**: WCAG compliant with proper contrast, keyboard navigation, and screen reader support
 - **Security Headers**: Content Security Policy and other security best practices
-- **GitHub Pages Ready**: Static site ready for deployment
+- **Project Filtering**: Interactive JavaScript-based project category filtering
+- **Contact Form**: Integrated Web3Forms for email submissions
+- **GitHub Pages Ready**: Static site deployed and live
 
 ## Color Palette
 
 - **Background**: `#0F172A` (Dark Slate)
 - **Primary Text**: `#E2E8F0` (Light Slate)
 - **Secondary Text**: `#94A3B8` (Muted Slate)
-- **Accent (Firefly Green)**: `#22C55E`
-- **Accent (Blue)**: `#38BDF8`
+- **Primary Accent**: `#10B981` (Emerald Green)
+- **Secondary Accent**: `#06B6D4` (Cyan)
 
 ## Typography
 
@@ -28,26 +32,32 @@ A minimalistic, modern, and professional portfolio website for a Data Engineer /
 ## Folder Structure
 
 ```
-@PortfolioWeb/
-├── index.html              # Home page
-├── about.html              # About page
-├── projects.html           # Projects showcase
-├── writing.html            # Writing & content hub
-├── cv.html                 # Online CV/Resume
-├── contact.html            # Contact page
-├── README.md              # This file
+portfolio-website/
+├── index.html                  # Home page
+├── projects.html               # Projects showcase with filtering
+├── insights-media.html         # Blog & Media hub
+├── cv.html                     # Online CV/Resume
+├── contact.html                # Contact page with Web3Forms integration
+├── writing.html                # Legacy writing page
+├── README.md                   # This file
+├── .gitignore                  # Git ignore file
 ├── assets/
 │   ├── css/
-│   │   └── style.css      # Main stylesheet
+│   │   └── style.css          # Main stylesheet
+│   ├── js/
+│   │   ├── projects-filter.js # Project category filtering
+│   │   └── contact-form.js    # Contact form handler
 │   ├── images/
-│   │   ├── favicon.svg    # Site favicon
-│   │   └── profile.jpg    # Profile photo (placeholder)
-│   ├── icons/             # Additional icons (if needed)
-│   └── files/             # Downloadable files (e.g., PDF resume)
-└── blog/
-    ├── post1.html         # Sample blog post
-    ├── post2.html         # (Create as needed)
-    └── post3.html         # (Create as needed)
+│   │   ├── favicon.svg        # Site favicon
+│   │   └── profile.jpg        # Profile photo
+│   ├── icons/                 # Additional icons
+│   └── files/                 # Downloadable files (PDF resume)
+├── docs/
+│   ├── DEPLOYMENT_GUIDE.md    # Deployment instructions
+│   ├── MAINTENANCE_GUIDE.md   # Website maintenance guide
+│   ├── CONTENT_GUIDE.md       # Adding new content
+│   └── TECHNICAL_DOCUMENTATION.md  # Technical architecture
+└── blog/                      # Blog posts directory (for future use)
 ```
 
 ## Customization Guide
