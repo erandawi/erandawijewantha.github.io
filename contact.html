@@ -7,7 +7,7 @@
     <meta name="description" content="Contact Eranda Wijewantha for Business Intelligence, Data Engineering and AI/ML consulting services">
     <meta name="keywords" content="Hire Data Engineer, BI Consultant, Freelance ML Developer">
     <meta name="author" content="Eranda Wijewantha">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self'; form-action 'self' https://api.web3forms.com; connect-src 'self' https://api.web3forms.com;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <script defer src="assets/js/contact-form.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -91,7 +92,16 @@
 
                 <div class="contact-form">
                     <h3>Send a Message</h3>
-                    <form action="#" method="POST" id="contactForm">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <!-- Replace YOUR_ACCESS_KEY with your Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="651d6297-3871-42bb-998d-3a1217c4fbda">
+
+                        <!-- Redirect to thank you page after submission -->
+                        <input type="hidden" name="redirect" value="https://erandawijewantha.github.io/portfolio-website/contact.html">
+
+                        <!-- Your email to receive submissions -->
+                        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
                         <div class="form-group">
                             <label for="name">Your Name *</label>
                             <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -119,9 +129,7 @@
 
                         <button type="submit" class="btn btn-primary form-submit">Send Message</button>
                     </form>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
-                        Note: This form is ready for integration with services like Formspree, EmailJS, or your backend API.
-                    </p>
+                    <p id="formStatus" style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);"></p>
                 </div>
             </div>
 
